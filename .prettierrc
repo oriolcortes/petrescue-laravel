@@ -15,6 +15,13 @@
         "printWidth": 200,
         "tabWidth": 2
       }
+    },
+    {
+      "files": ["*.php"],
+      "options": {
+        "printWidth": 200,
+        "tabWidth": 4
+      }
     }
   ]
 }

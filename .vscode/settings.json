@@ -1,25 +1,34 @@
 {
   // Configuraciones generales del editor
-  "editor.formatOnSave": true, // Formatea automáticamente al guardar para mantener estilo consistente
-  "editor.formatOnPaste": true, // Formatea también al pegar para evitar “código sucio” que venga de fuera
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "always"
-  }, // Aplica correcciones automáticas disponibles al guardar (eslint/prettier, etc.)
-  "editor.defaultFormatter": "esbenp.prettier-vscode", // Usa Prettier como formateador por defecto
-  "editor.tabSize": 2, // Tamaño de tabulación en 2 espacios (estándar en muchos proyectos)
-  "editor.wordWrap": "on", // Ajuste de línea activado para que el texto no se salga del ancho de la ventana
-  "files.trimTrailingWhitespace": true, // Elimina espacios al final de línea al guardar (limpieza básica)
-  "files.insertFinalNewline": true, // Asegura que los archivos terminen con salto de línea (buena práctica)
-  "workbench.iconTheme": "vscode-icons", // Tema de iconos en el explorador para identificar tipos de archivo de un vistazo
-  // ----------------------------------
-  // Configuraciones para validaciones
-  "markdown.validate.enabled": true, // Activa la validación integrada de Markdown (avisos de enlaces/ancoras, sintaxis)
-  "yaml.validate": true, // Valida archivos YAML (frecuentes en CI y configs)
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[php]": {
+    "editor.defaultFormatter": "junstyle.php-cs-fixer"
+  },
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "workbench.iconTheme": "vscode-icons",
+  // Configuraciones de HTML
+  "editor.linkedEditing": true,
+  // Configuraciones de PHP
+  "php.validate.enable": true,
+  "php.validate.executablePath": "/usr/bin/php",
+  // Configuraciones para PHPCS (PHP CodeSniffer)
+  "phpcs.enable": true,
+  "phpcs.standard": "PSR12",
+  "phpcs.executablePath": "/Users/oriolcortes/.composer/vendor/bin/phpcs",
+  // Configuraciones para PHP CS Fixer
+  "php-cs-fixer.executablePath": "/Users/oriolcortes/.composer/vendor/bin/php-cs-fixer",
   // Configuraciones para Prettier
-  "prettier.singleQuote": true, // Comillas simples en Prettier (estilo más común en JS/TS)
-  "prettier.trailingComma": "es5", // Coma final donde ES5 lo permite (objetos, arrays) para difs más limpios
-  "prettier.tabWidth": 2, // Prettier alinea con 2 espacios (coincide con editor.tabSize)
-  // ----------------------------------
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "prettier.tabWidth": 2,
   // Configuraciones para Conventional Commits
   "conventionalCommits.scopes": [
     "feat",
@@ -28,5 +37,5 @@
     "chore",
     "refactor",
     "perf"
-  ], // Lista de “scopes” sugeridos al redactar commits convencionales (puedes adaptarla a tus dominios)
+  ]
 }

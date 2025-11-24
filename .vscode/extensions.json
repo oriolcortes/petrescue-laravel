@@ -10,5 +10,9 @@
     "yzhang.markdown-all-in-one", // Atajos útiles para trabajar con Markdown (TOCs, snippets, etc.)
     "github.vscode-github-actions", // Mejor soporte para GitHub Actions (YAML, sintaxis, esquemas)
     "redhat.vscode-yaml", // Validador y ayudas para YAML
+    // Recomendaciones para PHP
+    "shevaua.phpcs",
+    "junstyle.php-cs-fixer",
+    "bmewburn.vscode-intelephense-client"
   ]
 }
